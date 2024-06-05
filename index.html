@@ -1,51 +1,80 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Inicio de Sesión/Registro</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <div class="forms">
-            <div class="form login">
-                <h2 class="heading">Iniciar Sesión</h2>
-                <div class="line"></div>
-                <div class="underline"></div>
-                <div class="content">
-                    <div class="field">
-                        <input type="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <div class="field">
-                        <input type="password" placeholder="Contraseña" required>
-                        <i class="bx bx-hide hide-show"></i>
-                    </div>
-                    <button>Iniciar Sesión</button>
-                    <p class="forg">¿Olvidó su contraseña?</p>
-                </div>
-                <p class="link">¿No tiene una cuenta? <a href="#">Registrarse</a></p>
+    <section class="container forms">
+    <div class="form login">
+        <h3 class="heading">Login-Form</h3>
+        <form action="#" class="content">
+            <div class="line underline"></div>
+            
+            <div class="field input">
+                <input type="email" placeholder="Enter your Email" />
             </div>
-            <div class="form signup">
-                <h2 class="heading">Registrarse</h2>
-                <div class="line"></div>
-                <div class="underline"></div>
-                <div class="content">
-                    <div class="field">
-                        <input type="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <div class="field">
-                        <input type="password" placeholder="Contraseña" required>
-                        <i class="bx bx-hide hide-show"></i>
-                    </div>
-                    <button>Registrarse</button>
-                </div>
-                <p class="link">¿Ya tiene una cuenta? <a href="#">Iniciar Sesión</a></p>
+
+            <div class="field input">
+            <input type="password" placeholder="Enter your Password" class="password" />
+            <i class='bx bx-hide hide-show'></i>
             </div>
-        </div>
+            
+            <div class="forg">
+                <a href="#" class="forget">Forget password?</a>
+            </div>
+
+            <div class="field btn">
+                <button><a href="https://code.visualstudio.com/">Login</a></button>
+            </div>
+
+            <div class="link sign-login">
+                <span>Don't have an Account!</span>
+                <a href="#" class="forget">Sign up</a>
+            </div>
+        </form>
     </div>
 
-    <script src="script.js"></script>
+
+
+
+    <div class="form signup">
+        <h3 class="heading">SignUp-Form</h3>
+        <form action="#" class="content">
+            <div class="line underline"></div>
+            
+            <div class="field input">
+                <input type="email" placeholder="Enter your Email" required />
+            </div>
+
+            <div class="field input">
+            <input type="password" placeholder="Enter your new Password" class="password" required />
+            <i class='bx bx-hide hide-show'></i>
+            </div>
+
+            <div class="field input">
+            <input type="password" placeholder="Confirm Password" class="password" required />
+            <i class='bx bx-hide hide-show'></i>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="field btn">
+                <button><a href="https://code.visualstudio.com/">Sign Up</a></button>
+            </div>
+
+            <div class="link sign-login">
+                <span>Already have an Account!</span>
+                <a href="#" class="forget">Login</a>
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <script src="./app.js"></script>
 </body>
 </html>
