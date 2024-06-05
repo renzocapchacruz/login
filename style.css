@@ -1,13 +1,10 @@
-/* styles.css */
-
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.container {
+.container{
     background-color: rgb(255, 119, 0);
     display: flex;
     align-items: center;
@@ -16,49 +13,38 @@
     height: 100vh;
     column-gap: 0px;
 }
-
-.forms {
-    position: relative;
-}
-
-.form {
+.form{
     position: absolute;
     max-width: 450px;
     width: 100%;
     margin: 20px;
     padding-top: 15px;
     background-color: #fff;
-    border-radius: 8px;
-}
-
-.form.signup {
+    border-radius: 8px;    }
+.form.signup{
     opacity: 0;
     pointer-events: none;
 }
-
-.forms.Show-Signup .form.signup {
+.forms.Show-Signup .form.signup{
     opacity: 1;
     pointer-events: auto;
 }
-
-.forms.Show-Signup .form.login {
+.forms.Show-Signup .form.login{
     opacity: 0;
     pointer-events: none;
 }
-
-.heading {
+.heading{
     font-size: 28px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 500 ;
+    
 }
-
-.line {
+.line{
     background-color: rgb(195, 195, 195);
     margin: 20px;
     height: 1px;
 }
-
-.underline {
+.underline{
     background-color: rgb(255, 119, 0);
     margin: 8px 120px 40px 120px;
     height: 2.5px;
@@ -66,47 +52,41 @@
 
 .content {
     margin: 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 30px ;
 }
-
-.field {
+.field{
     width: 100%;
     height: 35px;
     position: relative;
-    margin: 10px 0;
+    margin: 10px 0 ;
 }
-
-.input {
+.input{
     padding: 0 20px;
 }
-
 .field input,
-.field button {
+.field button{
+
     width: 100%;
     height: 100%;
     padding: 0 15px;
     border-radius: 12px;
 }
-
-.field input {
+.field input{
     outline: none;
     border-style: none none solid none;
     border-radius: 0;
 }
-
-.input .hide-show {
+.input .hide-show{
     position: absolute;
     top: 50%;
     right: 20px;
     opacity: 0.6;
     cursor: pointer;
 }
-
-.field input:focus {
+.field input:focus{
     border-bottom: 2px solid;
 }
-
-.field button {
+.field button{
     background-color: rgb(255, 119, 0);
     border: none;
     color: #fff;
@@ -114,7 +94,6 @@
     font-weight: 100;
     cursor: pointer;
 }
-
 .forg {
     margin: 10px 0 23px 0;
     text-align: right;
@@ -122,19 +101,16 @@
     text-decoration: none;
     cursor: pointer;
 }
-
 .link a,
-.forg a {
+.forg a{
     text-decoration: none;
 }
-
-.link {
+.link{
     text-align: center;
     margin: 20px 0;
     cursor: pointer;
 }
-
-.thirdLogin {
+.thirdLogin{
     border: 1px solid grey;
     display: flex;
     align-items: center;
